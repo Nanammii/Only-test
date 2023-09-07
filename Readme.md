@@ -1,6 +1,6 @@
 # Копия Тестовое задание на Frontend стажировку
 
-* Demo: [Demo](https://up.htmlacademy.ru/javascript/28/user/35554).
+* Demo: [Demo]().
 
 ---
 
