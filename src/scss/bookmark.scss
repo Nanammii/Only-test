@@ -1,0 +1,254 @@
+.bookmark {
+  display: flex;
+}
+
+.bookmark__item {
+  position: absolute;
+
+  &--building-1 {
+    top: 52%;
+    left: 21%;
+
+    @media (min-width: 1600px) {
+      top: 57%;
+    }
+
+    @media (min-width: 1800px) {
+      top: 61%;
+      left: 23%;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 65%;
+      left: 25%;
+    }
+  }
+
+  &--building-2 {
+    top: 16%;
+    left: 25%;
+
+    @media (min-width: 1360px) {
+      top: 18%;
+    }
+
+    @media (min-width: 1600px) {
+      top: 22%;
+    }
+
+    @media (min-width: 1800px) {
+      top: 24%;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 26%;
+    }
+  }
+
+  &--building-3 {
+    top: 32%;
+    left: 35%;
+
+    @media (min-width: 1360px) {
+      top: 36%;
+    }
+
+    @media (min-width: 1600px) {
+      top: 40%;
+    }
+
+    @media (min-width: 1800px) {
+      top: 42%;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 44%;
+    }
+  }
+
+  &--building-4 {
+    top: 40%;
+    left: 55%;
+
+    @media (min-width: 1360px) {
+      top: 45%;
+    }
+
+    @media (min-width: 1600px) {
+      top: 50%;
+    }
+
+    @media (min-width: 1800px) {
+      top: 54%;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 58%;
+    }
+  }
+
+  &--building-5 {
+    top: 54%;
+    left: 60%;
+
+    @media (min-width: 1360px) {
+      top: 57%;
+    }
+
+    @media (min-width: 1600px) {
+      top: 65%;
+    }
+
+    @media (min-width: 1800px) {
+      top: 68%;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 73%;
+    }
+  }
+
+  &--building-6 {
+    top: 25%;
+    left: 60%;
+
+    @media (min-width: 1360px) {
+      top: 28%;
+    }
+
+    @media (min-width: 1600px) {
+      top: 32%;
+    }
+
+    @media (min-width: 1800px) {
+      top: 34%;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 37%;
+    }
+  }
+
+  &--building-7 {
+    top: 42%;
+    left: 67%;
+
+    @media (min-width: 1360px) {
+      top: 47%;
+    }
+
+    @media (min-width: 1600px) {
+      top: 51%;
+    }
+
+    @media (min-width: 1800px) {
+      top: 56%;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 62%;
+    }
+  }
+
+  &--building-8 {
+    top: 12%;
+    left: 71%;
+
+    @media (min-width: 1360px) {
+      top: 15%;
+    }
+
+    @media (min-width: 1600px) {
+      top: 18%;
+    }
+
+    @media (min-width: 1800px) {
+      top: 20%;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 21%;
+    }
+  }
+
+  &--building-9 {
+    top: 30%;
+    left: 75%;
+
+    @media (min-width: 1360px) {
+      top: 34%;
+    }
+
+    @media (min-width: 1600px) {
+      top: 38%;
+    }
+
+    @media (min-width: 1800px) {
+      top: 41%;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 44%;
+    }
+  }
+
+  &--building-10 {
+    top: 48%;
+    left: 83%;
+
+    @media (min-width: 1360px) {
+      top: 53%;
+    }
+
+    @media (min-width: 1600px) {
+      top: 57%;
+    }
+
+    @media (min-width: 1800px) {
+      top: 63%;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 66%;
+    }
+  }
+}
+
+.bookmark__button {
+  display: block;
+  position: relative;
+  min-width: 10px;
+  min-height: 10px;
+  padding: 15px;
+  border-radius: 50%;
+  background-color: $back-bookmark-main;
+  font-size: 0;
+  line-height: 0;
+
+  &--secondary {
+    background-color: $back-bookmark-secondary;
+  }
+
+  &--active {
+    padding: 11px 15px 11px 40px;
+    color: #ffffff;
+    border-radius: 40px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: 16px;
+    width: 10px;
+    height: 2px;
+    background-color: #ffffff;
+  }
+
+  &::after {
+    transform: rotate(90deg);
+  }
+}
